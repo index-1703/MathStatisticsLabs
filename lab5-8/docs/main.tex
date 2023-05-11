@@ -1,0 +1,39 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[square,sort,comma,numbers]{natbib}
+\usepackage{amsmath,amsthm,amssymb} % Required for some math elements 
+\usepackage[a4paper, mag=1000, left=2.5cm, right=2.5cm, top=2cm, bottom=2cm, headsep=0.7cm, footskip=1cm]{geometry}
+
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+
+\usepackage{xcolor}
+\usepackage{hyphenat}
+\usepackage[unicode, pdftex, colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{float}
+
+\hypersetup{linkcolor=black}
+
+\addto\captionsrussian{\def\refname{Литература}}
+
+\begin{document}
+    \input{title}
+    \newpage
+    \tableofcontents
+    \newpage
+    \listoffigures
+    % \newpage
+    \listoftables
+    \newpage
+    \input{problems}
+    \input{theory}
+    \input{realization}
+    \input{results}
+    \input{discuss}
+    \input{common/liter.tex}
+    
+    
+\end{document}
